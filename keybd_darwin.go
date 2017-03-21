@@ -17,7 +17,10 @@ package keybd_event
  }
 */
 import "C"
-import "time"
+
+import (
+	"time"
+)
 
 const (
 	_AShift          = C.kCGEventFlagMaskAlphaShift
@@ -32,7 +35,7 @@ const (
 	_VK_Control      = 0x3B
 	_VK_RightShift   = 0x3C
 	_VK_RightControl = 0x3E
-	_VK_Command      = 0x37
+	VK_Command       = 0x37
 	_VK_Shift        = 0x38
 )
 
